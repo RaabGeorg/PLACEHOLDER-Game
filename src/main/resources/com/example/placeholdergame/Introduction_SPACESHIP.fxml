@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" scaleShape="false" spacing="20.0" style="-fx-background-color: #666666;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.placeholdergame.AdventureGameController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <ImageView fx:id="image" fitHeight="350.0" fitWidth="961.0" pickOnBounds="true" translateY="141.0" VBox.vgrow="NEVER">
+      <image>
+         <Image url="@../../../../Downloads/Introduction_SPACESHIP.jpeg" />
+      </image></ImageView>
+   <Button fx:id="firstButton" maxHeight="-Infinity" maxWidth="322.0" minHeight="-Infinity" minWidth="322.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Option 1" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="145.0">
+      <font>
+         <Font size="15.0" />
+      </font></Button>
+    <Button fx:id="secondButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Option 2" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="131.0">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+   <Button fx:id="thirdButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Option 3" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="117.0">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+   <Button accessibleRole="MENU_BUTTON" layoutX="329.0" layoutY="284.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="29.0" prefWidth="63.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-border-color: transparent; -fx-font-style: #808080;" text="Menu" textAlignment="CENTER" textFill="WHITE" translateX="448.0" translateY="-91.0">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font></Button>
+   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" translateX="-380.0" translateY="-133.0" wrappingWidth="182.46205520629883">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Text>
+   <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="610.0" style="-fx-background-color: #808080;" text="You wake up in a dark room, the metallic smell of the air hits&#10;your nostrils. A slight humming noise is running along the floor, hinting at&#10;the hum of faraway engines. You sit up and realize that what you had lain on&#10;was not your bed, it was cold, hard steel.&#10;&#10;Disoriented, you try to recall how you got here, but your memory is hazy.&#10;Then suddenly, a robotic voice crackles through a speaker in the wall:&#10;&quot;Welcome to the SF PLACEHOLDER. Your task: Find the Orb&#10;to progress. Beware of hazards en route.&quot;&#10;&#10;A panel on the wall hisses and slides open, revealing a dark corridor lined&#10;with flickering lights. The air grows heavier with every step you take.&#10;Somewhere on this ship lies the Orb that will unlock the way forward. But&#10;danger lurks, and you'll need to rely on your wits to survive.&#10;&#10;As you go through the dark corridors, you come across a door with an inscription&#10;on it: &quot;Navigation Room.&quot; It opens with a hissing sound, and you find yourself&#10;in a very messy control room. Flickering monitors show distorted images of&#10;different parts of the ship, and the central console beeps steadily." translateX="-167.0" translateY="-151.0" />
+</VBox>
