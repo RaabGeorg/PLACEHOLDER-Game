@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" scaleShape="false" spacing="20.0" style="-fx-background-color: #666666;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.placeholdergame.AdventureGameController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <ImageView fx:id="image" fitHeight="350.0" fitWidth="961.0" pickOnBounds="true" translateY="141.0" VBox.vgrow="NEVER">
+      <image>
+         <Image url="@Event3_SPACESHIP.jpeg" />
+      </image></ImageView>
+   <Button fx:id="firstButton" maxHeight="-Infinity" maxWidth="322.0" minHeight="-Infinity" minWidth="322.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Option 1" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="145.0">
+      <font>
+         <Font size="15.0" />
+      </font></Button>
+    <Button fx:id="secondButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Option 2" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="131.0">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+   <Button fx:id="thirdButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Option 3" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="117.0">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+   <Button accessibleRole="MENU_BUTTON" layoutX="329.0" layoutY="284.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="29.0" prefWidth="63.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-border-color: transparent; -fx-font-style: #808080;" text="Menu" textAlignment="CENTER" textFill="WHITE" translateX="448.0" translateY="-91.0">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font></Button>
+   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" translateX="-380.0" translateY="-133.0" wrappingWidth="182.46205520629883">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Text>
+   <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="610.0" style="-fx-background-color: #808080;" text="After narrowly escaping the combat droid, you follow a corridor marked with an&#10;unfamiliar symbol. The passage leads to a small chamber, where a faint, soothing&#10;hum emanates from within.&#10;The room is pristine compared to the rest of the ship, its walls illuminated&#10;by soft, blue lights. A cheerful AI merchant floats behind a counter, its&#10;spherical body covered in glowing panels.&#10;&quot;Welcome, traveler!&quot; it chirps in a mechanical but friendly tone. &quot;SF PLACEHOLDER &#10;Trade Station offers items to aid your journey. Credits are accepted!&quot;&#10;On the counter, a display showcases various goods: health kits, repair tools,&#10;and what looks like a weapon upgrade module. A screen on the wall shows your&#10;current credit balance.&#10;This might be your only chance to stock up before things get even more&#10;dangerous.&#10;&#10;What will you do?&#10;• Option 1: &quot;Spend your credits wisely to purchase a health kit.&quot;&#10;• Option 2: &quot;Spend all your credits on a mysterious, overpriced gadget.&quot;&#10;• Option 3: &quot;Decide to save your credits and move on.&quot;" translateX="-167.0" translateY="-151.0" />
+</VBox>
