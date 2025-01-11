@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" scaleShape="false" spacing="20.0" style="-fx-background-color: #666666;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.placeholdergame.AdventureGameController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <ImageView fx:id="image" fitHeight="350.0" fitWidth="961.0" pickOnBounds="true" translateY="141.0" VBox.vgrow="NEVER">
+      <image>
+         <Image url="@image_corridor_of_death_lexi.png" />
+      </image></ImageView>
+   <Button fx:id="firstButton" maxHeight="-Infinity" maxWidth="322.0" minHeight="-Infinity" minWidth="322.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Y O U   D I E D." textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="145.0">
+      <font>
+         <Font size="15.0" />
+      </font></Button>
+    <Button fx:id="secondButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Y O U   D I E D." textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="131.0">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+   <Button fx:id="thirdButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Y O U   D I E D." textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="117.0">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+   <Button accessibleRole="MENU_BUTTON" layoutX="329.0" layoutY="284.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="29.0" prefWidth="63.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-border-color: transparent; -fx-font-style: #808080;" text="Menu" textAlignment="CENTER" textFill="WHITE" translateX="448.0" translateY="-91.0">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font></Button>
+   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" translateX="-380.0" translateY="-133.0" wrappingWidth="182.46205520629883">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Text>
+   <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="610.0" style="-fx-background-color: #808080;" text="With a swift motion, you draw your dagger, and attack. &#10;The red-eyed person moves their hand in front of their face just in time to avoid any serious damage. &#10;You realise the music, the voices, the dancing all have stopped. &#10;Pale faces, all equally shocked and incredulous, stare at you - red eyes glowing.&#10;&#10;“My, my. Now, what sin have I committed to be punished like that, little [insert character name].”&#10;They move their hand from their face, and you see the bleeding cut in their hand heal slowly. &#10;Fangs bared, eyes redder than ever, they start approaching you.&#10;&#10;“No!” you yell.&#10;And you run. As fast as your feet may carry you. And you find yourself embraced by darkness again. &#10;You take a turn. And then another. And yet another. Have you been running in circles? &#10;You can’t tell in this god-forsaken darkness! Your heart is racing. You do not dare look behind you. Not yet. &#10;Another turn. And then you see them again. These eyes. &#10;You stop in your tracks. Slip. Stumble. And make a 180. Ready to sprint back down the hall, you freeze. &#10;Again. There they are. Staring right at you. And coming closer. &#10;&#10;“Please . . .”, you hear yourself whimper. “I don’t belong here, I am not from your world.”&#10;&#10;“Then your blood should taste all the sweeter . . .”, you hear them reply in a low voice.&#10;&#10;Y O U &#9;D I E D  . . ." translateX="-167.0" translateY="-151.0" />
+</VBox>

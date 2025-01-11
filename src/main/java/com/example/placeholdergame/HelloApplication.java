@@ -12,7 +12,8 @@ public class HelloApplication extends Application {
     public void start(Stage stage) {
         try {
 
-            Parent root = FXMLLoader.load(getClass().getResource("Event1_SPACESHIP.fxml"));
+            //change to main screen:
+            Parent root = FXMLLoader.load(getClass().getResource("1.1_intro_lexi.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
