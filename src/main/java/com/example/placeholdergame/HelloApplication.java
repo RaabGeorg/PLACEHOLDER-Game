@@ -12,7 +12,7 @@ public class HelloApplication extends Application {
     public void start(Stage stage) {
         try {
 
-            //change to main screen
+            //change to main screen:
             Parent root = FXMLLoader.load(getClass().getResource("1.1_intro_lexi.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);

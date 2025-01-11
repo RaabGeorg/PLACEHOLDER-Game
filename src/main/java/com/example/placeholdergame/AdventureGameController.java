@@ -14,7 +14,7 @@ public class AdventureGameController {
     private Scene scene;
     private Parent root;
 
-    //Lexi's Events start here
+    //Lexi's Events start here:
     public void lexiEvent1OptionBack(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("1.1.2_going_back_lexi.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -87,7 +87,7 @@ public class AdventureGameController {
         stage.show();
     }
 
-    //Georg's Events start here
+    //Georg's Events start here:
     public void georgEvent1(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("Event1_SPACESHIP.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
