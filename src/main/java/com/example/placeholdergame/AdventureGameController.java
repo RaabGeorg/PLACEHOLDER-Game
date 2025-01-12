@@ -16,6 +16,7 @@ public class AdventureGameController {
 
     public void Introduction_SPACESHIP(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("Introduction_SPACESHIP.fxml"));
+    }
   
     //Lexi's Events start here:
     public void lexiEvent1OptionBack(ActionEvent event) throws IOException {
