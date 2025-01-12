@@ -91,6 +91,95 @@ public class AdventureGameController {
         stage.show();
     }
 
+    //Nicoletta's Events start here:
+    public void N_intro(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("N_intro.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void N_intro_left(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("N_intro_left.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void N_intro_middle(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("N_intro_middle.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void N_intro_right(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("N_intro_right.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void N_forest(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("N_forest.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void N_temlple(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("N_forest.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void N_temple_false(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("N_temple_false.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void N_end(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("N_end.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void N_end_door(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("N_end_door.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void N_end_ring(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("N_end_ring.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void N_end_stone(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("N_end_stone.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
     //Georg's Events start here:
     public void georgEvent1(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("Event1_SPACESHIP.fxml"));
