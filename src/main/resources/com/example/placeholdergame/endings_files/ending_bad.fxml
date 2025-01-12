@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" scaleShape="false" spacing="20.0" style="-fx-background-color: #666666;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.placeholdergame.AdventureGameController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <ImageView fx:id="image" fitHeight="350.0" fitWidth="961.0" pickOnBounds="true" translateY="141.0" VBox.vgrow="NEVER">
+      <image>
+         <Image url="@ending_bad.png" />
+      </image></ImageView>
+   <Button fx:id="firstButton" maxHeight="-Infinity" maxWidth="322.0" minHeight="-Infinity" minWidth="322.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="You lost..." textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="145.0">
+      <font>
+         <Font size="15.0" />
+      </font></Button>
+    <Button fx:id="secondButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="to the test," textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="131.0">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+   <Button fx:id="thirdButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="and your summer..." textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="117.0">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+   <Button accessibleRole="MENU_BUTTON" layoutX="329.0" layoutY="284.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="29.0" prefWidth="63.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-border-color: transparent; -fx-font-style: #808080;" text="Menu" textAlignment="CENTER" textFill="WHITE" translateX="448.0" translateY="-91.0">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font></Button>
+   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" translateX="-380.0" translateY="-133.0" wrappingWidth="182.46205520629883">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Text>
+   <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="610.0" style="-fx-background-color: #808080;" text="You wake up with a start. The test! You fell asleep! &#10;Panic strikes when you see the clock—20 minutes left. You glance at the questions: &#10;“How to handle a vampire?” , “Math formulas?” You have no idea. &#10;“How to fix a console?” You can’t remember a thing. &#10;You look up—your teacher’s grinning evilly, almost like they planned this. You’re doomed. &#10;No way to finish in time. The rest of the test is a blur, and as you turn it in, you know: &#10;you’ll be repeating this class this summer. What a nightmare!" translateX="-167.0" translateY="-151.0" />
+</VBox>
