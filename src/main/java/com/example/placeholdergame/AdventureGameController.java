@@ -14,24 +14,129 @@ public class AdventureGameController {
     private Scene scene;
     private Parent root;
 
-    public void georgEvent1(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("Event1_SPACESHIP.fxml"));
+    public void Introduction_SPACESHIP(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("Introduction_SPACESHIP.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
 
-    public void georgEvent1_Option1(ActionEvent event) throws IOException {
+    public void event1_SPACESHIP(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Event1_SPACESHIP.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void event1_Option1_SPACESHIP(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("Event1-Option1_SPACESHIP.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
-
-    public void switchToScene2(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Scene2.fxml"));
+    public void event1_Option2_SPACESHIP(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Event1-Option2_SPACESHIP.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void event1_Option3_SPACESHIP(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Event1-Option3_SPACESHIP.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void event2_SPACEHIP(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Event2_SPACESHIP.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void event2_Option1_SPACESHIP(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Event2-Option1_SPACESHIP.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void event2_Option2_SPACESHIP(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Event2-Option2_SPACESHIP.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void event2_Option3_SPACESHIP(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Event2-Option3_SPACESHIP.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void event3_SPACESHIP(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Event3_SPACESHIP.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void event3_Option1_SPACESHIP(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Event3-Option1_SPACESHIP.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void event3_Option2_SPACESHIP(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Event3-Option2_SPACESHIP.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void event3_Option3_SPACESHIP(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Event3-Option3_SPACESHIP.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void event4_SPACESHIP(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Event4_SPACESHIP.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void event4_Option1_SPACESHIP(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Event4-Option1_SPACESHIP.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void event4_Option2_SPACESHIP(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Event4-Option2_SPACESHIP.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void event4_Option3_SPACESHIP(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Event4-Option3_SPACESHIP.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void conclusion_SPACESHIP(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Conclusion_SPACESHIP.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

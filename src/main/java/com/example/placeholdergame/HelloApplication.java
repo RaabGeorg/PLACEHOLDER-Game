@@ -12,7 +12,7 @@ public class HelloApplication extends Application {
     public void start(Stage stage) {
         try {
 
-            Parent root = FXMLLoader.load(getClass().getResource("Event1_SPACESHIP.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("Introduction_SPACESHIP.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
