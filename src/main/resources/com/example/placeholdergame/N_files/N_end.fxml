@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" scaleShape="false" spacing="20.0" style="-fx-background-color: #666666;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.placeholdergame.AdventureGameController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <ImageView fx:id="image" fitHeight="350.0" fitWidth="961.0" pickOnBounds="true" translateY="141.0" VBox.vgrow="NEVER">
+      <image>
+
+      </image></ImageView>
+   <Button fx:id="firstButton" maxHeight="-Infinity" maxWidth="322.0" minHeight="-Infinity" minWidth="322.0" mnemonicParsing="false" onAction="#N_end_door" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Door" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="145.0">
+      <font>
+         <Font size="15.0" />
+      </font></Button>
+    <Button fx:id="secondButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#N_end_stone" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Stone" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="131.0">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+   <Button fx:id="thirdButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#N_end_ring" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Large Ring" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="117.0">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+   <Button accessibleRole="MENU_BUTTON" layoutX="329.0" layoutY="284.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="29.0" prefWidth="63.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-border-color: transparent; -fx-font-style: #808080;" text="Menu" textAlignment="CENTER" textFill="WHITE" translateX="448.0" translateY="-91.0">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font></Button>
+   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" translateX="-380.0" translateY="-133.0" wrappingWidth="182.46205520629883">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Text>
+   <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="610.0" style="-fx-background-color: #808080;" text="Stepping inside, you walk toward the light. As you draw closer, it grows brighter until you enter a large, &#10;circular room. On the walls, there are various faded paintings with torches hanging beside them. Strangely &#10;enough, the torches are burning as if they had just been lit. Across the chamber, you notice a large ring set &#10;into the floor. In the center, columns form a circle, and sunlight streams down through an opening overhead, &#10;landing on a red stone. You step up to the stone, drawn to its hypnotic glow. Suddenly, you hear a clicking &#10;sound, followed by another noise. Panicking, you turn around and see that the door you entered is closing. &#10;You sprint toward it, but it shuts just before you reach it. Scanning the chamber, you realize there’s only &#10;this one door. You are trapped.&#10;What do you do?&#10;&#10;Examine the door for a switch.  &#10;Take the stone. &#10;Inspect the large ring." translateX="-167.0" translateY="-151.0" />
+</VBox>
