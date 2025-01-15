@@ -11,9 +11,9 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) {
         try {
-           
+
             //change to main screen:
-            Parent root = FXMLLoader.load(getClass().getResource("1.1_intro_lexi.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/com/example/placeholdergame/N_files/N_intro.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
@@ -25,5 +25,7 @@ public class HelloApplication extends Application {
 
     public static void main(String[] args) {
         launch(args);
+//        System.out.println("java version: "+System.getProperty("java.version"));
+//        System.out.println("javafx.version: " + System.getProperty("javafx.version"));
     }
 }
