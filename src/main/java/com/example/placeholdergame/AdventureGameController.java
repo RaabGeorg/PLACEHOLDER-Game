@@ -14,10 +14,6 @@ public class AdventureGameController {
     private Scene scene;
     private Parent root;
 
-    public void Introduction_SPACESHIP(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("Introduction_SPACESHIP.fxml"));
-    }
-  
     //Lexi's Events start here:
     public void lexiEvent1OptionBack(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("1.1.2_going_back_lexi.fxml"));
@@ -93,7 +89,7 @@ public class AdventureGameController {
 
     //Nicoletta's Events start here:
     public void N_intro(ActionEvent event) throws IOException{
-        root = FXMLLoader.load(getClass().getResource("N_intro.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/com/example/placeholdergame/N_files/N_intro.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -101,7 +97,7 @@ public class AdventureGameController {
     }
 
     public void N_intro_left(ActionEvent event) throws IOException{
-        root = FXMLLoader.load(getClass().getResource("N_intro_left.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/com/example/placeholdergame/N_files/N_intro_left.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -109,7 +105,7 @@ public class AdventureGameController {
     }
 
     public void N_intro_middle(ActionEvent event) throws IOException{
-        root = FXMLLoader.load(getClass().getResource("N_intro_middle.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/com/example/placeholdergame/N_files/N_intro_middle.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -117,7 +113,7 @@ public class AdventureGameController {
     }
 
     public void N_intro_right(ActionEvent event) throws IOException{
-        root = FXMLLoader.load(getClass().getResource("N_intro_right.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/com/example/placeholdergame/N_files/N_intro_right.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -125,15 +121,15 @@ public class AdventureGameController {
     }
 
     public void N_forest(ActionEvent event) throws IOException{
-        root = FXMLLoader.load(getClass().getResource("N_forest.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/com/example/placeholdergame/N_files/N_forest.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
 
-    public void N_temlple(ActionEvent event) throws IOException{
-        root = FXMLLoader.load(getClass().getResource("N_forest.fxml"));
+    public void N_temple(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("/com/example/placeholdergame/N_files/N_temple.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -141,7 +137,7 @@ public class AdventureGameController {
     }
 
     public void N_temple_false(ActionEvent event) throws IOException{
-        root = FXMLLoader.load(getClass().getResource("N_temple_false.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/com/example/placeholdergame/N_files/N_temple_false.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -149,7 +145,7 @@ public class AdventureGameController {
     }
 
     public void N_end(ActionEvent event) throws IOException{
-        root = FXMLLoader.load(getClass().getResource("N_end.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/com/example/placeholdergame/N_files/N_end.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -157,7 +153,7 @@ public class AdventureGameController {
     }
 
     public void N_end_door(ActionEvent event) throws IOException{
-        root = FXMLLoader.load(getClass().getResource("N_end_door.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/com/example/placeholdergame/N_files/N_end_door.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -165,7 +161,7 @@ public class AdventureGameController {
     }
 
     public void N_end_ring(ActionEvent event) throws IOException{
-        root = FXMLLoader.load(getClass().getResource("N_end_ring.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/com/example/placeholdergame/N_files/N_end_ring.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -173,7 +169,7 @@ public class AdventureGameController {
     }
 
     public void N_end_stone(ActionEvent event) throws IOException{
-        root = FXMLLoader.load(getClass().getResource("N_end_stone.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/com/example/placeholdergame/N_files/N_end_stone.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -181,6 +177,14 @@ public class AdventureGameController {
     }
 
     //Georg's Events start here:
+    public void Introduction_SPACESHIP(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("Introduction_SPACESHIP.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
     public void georgEvent1(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("Event1_SPACESHIP.fxml"));
 
