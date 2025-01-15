@@ -15,18 +15,18 @@
     </padding>
    <ImageView fx:id="image" fitHeight="350.0" fitWidth="961.0" pickOnBounds="true" translateY="141.0" VBox.vgrow="NEVER">
       <image>
-         <Image url="@Conclusion_SPACESHIP.jpeg" />
+         <Image url="@DavidPicture/DavidQTE1.png" />
       </image></ImageView>
-   <Button fx:id="firstButton" maxHeight="-Infinity" maxWidth="322.0" minHeight="-Infinity" minWidth="322.0" mnemonicParsing="false" onAction="#davidIntro" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Option 1" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="145.0">
+   <Button fx:id="firstButton" maxHeight="-Infinity" maxWidth="322.0" minHeight="-Infinity" minWidth="322.0" mnemonicParsing="false" onAction="#davidQTE2" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="CUT RED WIRE" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="145.0">
       <font>
          <Font size="15.0" />
       </font></Button>
-    <Button fx:id="secondButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#davidIntro" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Option 2" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="131.0">
+    <Button fx:id="secondButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="CUT BLUE WIRE" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="131.0">
       <font>
          <Font size="15.0" />
       </font>
    </Button>
-   <Button fx:id="thirdButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#davidIntro" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Option 3" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="117.0">
+   <Button fx:id="thirdButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="CUT GREEN WIRE" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="117.0">
       <font>
          <Font size="15.0" />
       </font>
@@ -40,5 +40,5 @@
          <Font name="System Bold" size="15.0" />
       </font>
    </Text>
-   <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="610.0" style="-fx-background-color: #808080;" text="With the Orb in hand, a portal materializes at the far end of the Cargo Bay.&#10;Its surface shimmers with an otherworldly light, inviting yet mysterious.&#10;The robotic voice echoes once more: &quot;You have proven resourceful. Step through&#10;to proceed to the next stage.&quot;&#10;Steeling yourself, you step toward the portal, ready to face whatever challenges&#10;await beyond.&#10;&#10;" translateX="-167.0" translateY="-151.0" />
+   <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="610.0" style="-fx-background-color: #808080;" text="All of a sudden the pain becomes worse. The augmented device also starts to display a counter. &#10;Counting from 10 down. &#10;Underneath that counter it says self termination. &#10;Quickly you see some wires on this device. In the Kitchen are scissors. &#10;Without thinking you quickly start to cut the wires." translateX="-167.0" translateY="-151.0" />
 </VBox>
