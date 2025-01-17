@@ -12,6 +12,7 @@ import java.io.IOException;
 
 public class AdventureGameController {
 
+    private EndingCountValues counter = EndingCountValues.getInstance();
     private GameManager gameManager = GameManager.getInstance();
     @FXML
     private Label errorMessage;
@@ -168,142 +169,88 @@ public class AdventureGameController {
     }
 
     //Georg's Events start here:
+    @FXML
     public void Introduction_SPACESHIP(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("Introduction_SPACESHIP.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event,"/com/example/placeholdergame/georg_files/Introduction_SPACESHIP.fxml");
     }
-
-    public void georgEvent1(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("Event1_SPACESHIP.fxml"));
-
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
-
+    @FXML
     public void event1_SPACESHIP(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Event1_SPACESHIP.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event,"/com/example/placeholdergame/georg_files/Event1_SPACESHIP.fxml");
     }
-
+    @FXML
     public void event1_Option1_SPACESHIP(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Event1-Option1_SPACESHIP.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event,"/com/example/placeholdergame/georg_files/Event1-Option1_SPACESHIP.fxml");
+        counter.good++;
     }
+    @FXML
     public void event1_Option2_SPACESHIP(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Event1-Option2_SPACESHIP.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event,"/com/example/placeholdergame/georg_files/Event1-Option2_SPACESHIP.fxml");
+        counter.bad++;
     }
+    @FXML
     public void event1_Option3_SPACESHIP(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Event1-Option3_SPACESHIP.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event, "/com/example/placeholdergame/georg_files/Event1-Option3_SPACESHIP.fxml");
+        counter.neutral++;
     }
+    @FXML
     public void event2_SPACEHIP(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Event2_SPACESHIP.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event, "/com/example/placeholdergame/georg_files/Event2_SPACESHIP.fxml");
     }
+    @FXML
     public void event2_Option1_SPACESHIP(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Event2-Option1_SPACESHIP.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event, "/com/example/placeholdergame/georg_files/Event2-Option1_SPACESHIP.fxml");
+        counter.good++;
     }
+    @FXML
     public void event2_Option2_SPACESHIP(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Event2-Option2_SPACESHIP.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event, "/com/example/placeholdergame/georg_files/Event2-Option2_SPACESHIP.fxml");
+        counter.bad++;
     }
+    @FXML
     public void event2_Option3_SPACESHIP(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Event2-Option3_SPACESHIP.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event, "/com/example/placeholdergame/georg_files/Event2-Option3_SPACESHIP.fxml");
+        counter.neutral++;
     }
+    @FXML
     public void event3_SPACESHIP(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Event3_SPACESHIP.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event, "/com/example/placeholdergame/georg_files/Event3_SPACESHIP.fxml");
     }
+    @FXML
     public void event3_Option1_SPACESHIP(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Event3-Option1_SPACESHIP.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event, "/com/example/placeholdergame/georg_files/Event3-Option1_SPACESHIP.fxml");
+        counter.good++;
     }
+    @FXML
     public void event3_Option2_SPACESHIP(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Event3-Option2_SPACESHIP.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+       gameManager.loadScene(event, "/com/example/placeholdergame/georg_files/Event3-Option2_SPACESHIP.fxml");
+       counter.bad++;
     }
+    @FXML
     public void event3_Option3_SPACESHIP(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Event3-Option3_SPACESHIP.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event, "/com/example/placeholdergame/georg_files/Event3-Option3_SPACESHIP.fxml");
+        counter.neutral++;
     }
+    @FXML
     public void event4_SPACESHIP(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Event4_SPACESHIP.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event, "/com/example/placeholdergame/georg_files/Event4_SPACESHIP.fxml");
     }
+    @FXML
     public void event4_Option1_SPACESHIP(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Event4-Option1_SPACESHIP.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event, "/com/example/placeholdergame/georg_files/Event4-Option1_SPACESHIP.fxml");
+        counter.good++;
     }
+    @FXML
     public void event4_Option2_SPACESHIP(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Event4-Option2_SPACESHIP.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event, "/com/example/placeholdergame/georg_files/Event4-Option2_SPACESHIP.fxml");
+        counter.bad++;
     }
     public void event4_Option3_SPACESHIP(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Event4-Option3_SPACESHIP.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event, "/com/example/placeholdergame/georg_files/Event4-Option3_SPACESHIP.fxml");
+        counter.neutral++;
     }
+    @FXML
     public void conclusion_SPACESHIP(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Conclusion_SPACESHIP.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event, "/com/example/placeholdergame/georg_files/Conclusion_SPACESHIP.fxml");
     }
 
     //David Story starts here
@@ -394,6 +341,28 @@ public class AdventureGameController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void endingGood(ActionEvent event) throws IOException {
+        gameManager.loadScene(event, "/com/example/placeholdergame/endings_files/ending_good.fxml");
+    }
+    public void endingBad(ActionEvent event) throws IOException {
+        gameManager.loadScene(event, "/com/example/placeholdergame/endings_files/ending_bad.fxml");
+    }
+    public void endingNeutral(ActionEvent event) throws IOException {
+        gameManager.loadScene(event, "/com/example/placeholdergame/endings_files/ending_neutral.fxml");
+    }
+
+    public void selectEnding(ActionEvent event) throws IOException {
+        System.out.println("good: " + counter.good + " bad: " + counter.bad + " neutral: " + counter.neutral);
+        if (counter.good > counter.bad && counter.good > counter.neutral) {
+            endingGood(event);
+        } else if (counter.bad > counter.good && counter.bad > counter.neutral) {
+            endingBad(event);
+        }else{
+            endingNeutral(event);
+        }
+
     }
 
 
