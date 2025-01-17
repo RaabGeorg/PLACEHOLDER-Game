@@ -37,6 +37,7 @@ public class GameManager {
                 this.lastFxmlPath = fxmlPath;
                 addDecisionCount();
             }
+
     }
 
     public void addDecisionCount(){
