@@ -128,15 +128,18 @@ public class AdventureGameController {
     public void N_intro_left(ActionEvent event) throws IOException{
         gameManager.loadScene(event,"/com/example/placeholdergame/N_files/N_intro_left.fxml");
         System.out.println(gameManager.getDecisionCount());
+        counter.neutral++;
     }
     @FXML
     public void N_intro_middle(ActionEvent event) throws IOException{
         gameManager.loadScene(event,"/com/example/placeholdergame/N_files/N_intro_middle.fxml");
         System.out.println(gameManager.getDecisionCount());
+        counter.good++;
     }
     @FXML
     public void N_intro_right(ActionEvent event) throws IOException{
         gameManager.loadScene(event,"/com/example/placeholdergame/N_files/N_intro_right.fxml");
+        counter.bad++;
     }
     @FXML
     public void N_forest(ActionEvent event) throws IOException{
@@ -150,28 +153,34 @@ public class AdventureGameController {
     @FXML
     public void N_temple_false(ActionEvent event) throws IOException{
         gameManager.loadScene(event,"/com/example/placeholdergame/N_files/N_temple_false.fxml");
+        counter.neutral++;
     }
     @FXML
     public void N_end(ActionEvent event) throws IOException{
         gameManager.loadScene(event, "/com/example/placeholdergame/N_files/N_end.fxml");
+        counter.good++;
     }
     @FXML
     public void N_end_door(ActionEvent event) throws IOException{
         gameManager.loadScene(event,"/com/example/placeholdergame/N_files/N_end_door.fxml");
+        counter.neutral++;
     }
     @FXML
     public void N_end_ring(ActionEvent event) throws IOException{
         gameManager.loadScene(event,"/com/example/placeholdergame/N_files/N_end_ring.fxml");
+        counter.neutral++;
     }
     @FXML
     public void N_end_stone(ActionEvent event) throws IOException{
         gameManager.loadScene(event,"/com/example/placeholdergame/N_files/N_end_stone.fxml");
+        counter.good++;
     }
 
     //Georg's Events start here:
     @FXML
     public void Introduction_SPACESHIP(ActionEvent event) throws IOException {
         gameManager.loadScene(event,"/com/example/placeholdergame/georg_files/Introduction_SPACESHIP.fxml");
+
     }
     @FXML
     public void event1_SPACESHIP(ActionEvent event) throws IOException {
