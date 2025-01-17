@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+
 public class GameManager {
 
     private String lastFxmlPath = null;
@@ -22,20 +23,21 @@ public class GameManager {
         return instance;
     }
 
-    public void loadScene(ActionEvent event, String fxmlPath) throws IOException {
-        System.out.println("loading fxml " + fxmlPath);
-        Parent root = FXMLLoader.load(getClass().getResource(fxmlPath));
-        System.out.println("fxml path succesful");
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.setTitle("Feverdream");
-        stage.show();
+    public void loadScene(ActionEvent event, String fxmlPath) throws IOException{
+            System.out.println("loading fxml " + fxmlPath);
+            Parent root = FXMLLoader.load(getClass().getResource(fxmlPath));
+            System.out.println("fxml path succesful");
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("Feverdream");
+            stage.show();
 
-        if (!fxmlPath.equals("/com/example/placeholdergame/menu.fxml")) {
-            this.lastFxmlPath = fxmlPath;
-            addDecisionCount();
-        }
+            if (!fxmlPath.equals("/com/example/placeholdergame/menu.fxml")) {
+                this.lastFxmlPath = fxmlPath;
+                addDecisionCount();
+            }
+
     }
 
     public void addDecisionCount(){
@@ -60,3 +62,4 @@ public class GameManager {
     }
 
 }
+
