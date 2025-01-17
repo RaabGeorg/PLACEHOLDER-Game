@@ -26,7 +26,7 @@
          <Font size="15.0" />
       </font>
    </Button>
-   <Button fx:id="thirdButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#davidIntro" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Option 3" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="117.0">
+   <Button fx:id="thirdButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectEnding" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Option 3" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="117.0">
       <font>
          <Font size="15.0" />
       </font>
