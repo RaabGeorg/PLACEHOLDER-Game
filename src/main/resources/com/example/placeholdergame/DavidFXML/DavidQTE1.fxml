@@ -35,7 +35,7 @@
       <font>
          <Font name="System Bold" size="15.0" />
       </font></Button>
-   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" translateX="-380.0" translateY="-133.0" wrappingWidth="182.46205520629883">
+   <Text fx:id="HealthCoinCounter" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" translateX="-380.0" translateY="-133.0" wrappingWidth="182.46205520629883">
       <font>
          <Font name="System Bold" size="15.0" />
       </font>
