@@ -208,6 +208,7 @@ public class AdventureGameController {
     @FXML
     public void event2_Option1_SPACESHIP(ActionEvent event) throws IOException {
         gameManager.loadScene(event, "/com/example/placeholdergame/georg_files/Event2-Option1_SPACESHIP.fxml");
+        counter.energyCore=true;
         counter.good++;
     }
     @FXML
@@ -223,6 +224,7 @@ public class AdventureGameController {
     @FXML
     public void event3_SPACESHIP(ActionEvent event) throws IOException {
         gameManager.loadScene(event, "/com/example/placeholdergame/georg_files/Event3_SPACESHIP.fxml");
+        System.out.println(counter.energyCore);
     }
     @FXML
     public void event3_Option1_SPACESHIP(ActionEvent event) throws IOException {
@@ -242,6 +244,13 @@ public class AdventureGameController {
     @FXML
     public void event4_SPACESHIP(ActionEvent event) throws IOException {
         gameManager.loadScene(event, "/com/example/placeholdergame/georg_files/Event4_SPACESHIP.fxml");
+    }
+    public void EnergyCore(ActionEvent event) throws IOException {
+        if(counter.energyCore){
+            event4_Option1_SPACESHIP(event);
+        }else if(!counter.energyCore){
+            event4_SPACESHIP(event);
+        }
     }
     @FXML
     public void event4_Option1_SPACESHIP(ActionEvent event) throws IOException {
