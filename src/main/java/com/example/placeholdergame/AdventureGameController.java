@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import java.io.IOException;
+import javafx.scene.text.Text;
 
 public class AdventureGameController {
 
@@ -44,6 +45,28 @@ public class AdventureGameController {
     public void hideErrorMessage(){
         errorMessage.setVisible(false);
     }
+
+
+
+
+    @FXML
+    private Text HealthCoinCounter;
+
+    private Coin coin = Coin.getInstance();
+    private Health health = Health.getInstance();
+
+    @FXML
+    public void initialize() {
+        updateHealthCoinCounter(); // Update the text at initialization
+    }
+
+    public void updateHealthCoinCounter() {
+        HealthCoinCounter.setText("Health: " + health.getHealth() +""+ "Coins: " + coin.getCoinCount());
+    }
+
+
+
+
 
     //Lexi's Events start here:
     public void lexiEvent1OptionBack(ActionEvent event) throws IOException {
@@ -111,7 +134,7 @@ public class AdventureGameController {
     }
 
     public void lexiEvent3OptionBreakFree(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("3.3_break_free_and_die_lexi.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("3.2_break_free_and_die_lexi.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -287,6 +310,9 @@ public class AdventureGameController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        coin.addCoins(5); // Increment coin count
+        health.loseHealth(5); // Increment health count
+        updateHealthCoinCounter(); // Update the display
     }
 
     public void davidChoice1x2(ActionEvent event) throws IOException {
