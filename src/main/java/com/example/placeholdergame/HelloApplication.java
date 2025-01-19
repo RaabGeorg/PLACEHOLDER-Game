@@ -13,10 +13,9 @@ public class HelloApplication extends Application {
         try {
 
             //change to main screen:
-            Parent root = FXMLLoader.load(getClass().getResource("/com/example/placeholdergame/menu.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/com/example/placeholdergame/N_files/N_intro.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
-            stage.setTitle("Feverdream");
             stage.show();
 
         } catch(Exception e) {
@@ -26,5 +25,7 @@ public class HelloApplication extends Application {
 
     public static void main(String[] args) {
         launch(args);
+//        System.out.println("java version: "+System.getProperty("java.version"));
+//        System.out.println("javafx.version: " + System.getProperty("javafx.version"));
     }
 }
