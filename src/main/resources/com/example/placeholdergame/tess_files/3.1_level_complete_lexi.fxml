@@ -17,16 +17,16 @@
       <image>
          <Image url="@image_ballroom_dance_lexi.png" />
       </image></ImageView>
-   <Button fx:id="firstButton" maxHeight="-Infinity" maxWidth="322.0" minHeight="-Infinity" minWidth="322.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="you fall" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="145.0">
+   <Button fx:id="firstButton" maxHeight="-Infinity" maxWidth="322.0" minHeight="-Infinity" minWidth="322.0" mnemonicParsing="false" onAction="#N_intro" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="you fall" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="145.0">
       <font>
          <Font size="15.0" />
       </font></Button>
-    <Button fx:id="secondButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="and fall" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="131.0">
+    <Button fx:id="secondButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#N_intro" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="and fall" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="131.0">
       <font>
          <Font size="15.0" />
       </font>
    </Button>
-   <Button fx:id="thirdButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="and fall..." textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="117.0">
+   <Button fx:id="thirdButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#N_intro" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="and fall..." textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="117.0">
       <font>
          <Font size="15.0" />
       </font>
@@ -35,7 +35,7 @@
       <font>
          <Font name="System Bold" size="15.0" />
       </font></Button>
-   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" translateX="-380.0" translateY="-133.0" wrappingWidth="182.46205520629883">
+   <Text fx:id="HealthCoinCounter" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" translateX="-380.0" translateY="-133.0" wrappingWidth="182.46205520629883">
       <font>
          <Font name="System Bold" size="15.0" />
       </font>

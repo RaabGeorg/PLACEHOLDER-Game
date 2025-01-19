@@ -61,7 +61,7 @@ public class AdventureGameController {
     }
 
     public void updateHealthCoinCounter() {
-        HealthCoinCounter.setText("Health: " + health.getHealth() +""+ "Coins: " + coin.getCoinCount());
+        HealthCoinCounter.setText("Health: " + health.getHealth() +" "+ "Coins: " + coin.getCoinCount());
     }
 
 
@@ -310,7 +310,7 @@ public class AdventureGameController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-        coin.addCoins(5); // Increment coin count
+        coin.addCoins(500); // Increment coin count
         health.loseHealth(5); // Increment health count
         updateHealthCoinCounter(); // Update the display
     }
