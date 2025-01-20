@@ -13,7 +13,6 @@ import java.io.IOException;
 public class GameManager {
 
     private String lastFxmlPath = null;
-    private int decisionCount = 0;
     private static GameManager instance;
 
     public static GameManager getInstance(){
@@ -35,17 +34,7 @@ public class GameManager {
 
             if (!fxmlPath.equals("/com/example/placeholdergame/menu.fxml")) {
                 this.lastFxmlPath = fxmlPath;
-                addDecisionCount();
             }
-
-    }
-
-    public void addDecisionCount(){
-        decisionCount++;
-    }
-
-    public int getDecisionCount(){
-        return decisionCount;
     }
 
     public String getLastFxmlPath(){

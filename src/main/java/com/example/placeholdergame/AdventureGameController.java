@@ -56,8 +56,11 @@ public class AdventureGameController {
     private Health health = Health.getInstance();
 
     @FXML
-    public void initialize() {
-        updateHealthCoinCounter(); // Update the text at initialization
+    public void initialize(){
+        if(HealthCoinCounter != null){
+            updateHealthCoinCounter(); // Update the text at initialization
+        }
+
     }
 
     public void updateHealthCoinCounter() {
@@ -145,19 +148,17 @@ public class AdventureGameController {
     @FXML
     public void N_intro(ActionEvent event) throws IOException{
         gameManager.loadScene(event,"/com/example/placeholdergame/N_files/N_intro.fxml");
-        System.out.println(gameManager.getDecisionCount());
     }
     @FXML
     public void N_intro_left(ActionEvent event) throws IOException{
         gameManager.loadScene(event,"/com/example/placeholdergame/N_files/N_intro_left.fxml");
-        System.out.println(gameManager.getDecisionCount());
         counter.neutral++;
     }
     @FXML
     public void N_intro_middle(ActionEvent event) throws IOException{
-        gameManager.loadScene(event,"/com/example/placeholdergame/N_files/N_intro_middle.fxml");
-        System.out.println(gameManager.getDecisionCount());
         counter.good++;
+        gameManager.loadScene(event,"/com/example/placeholdergame/N_files/N_intro_middle.fxml");
+
     }
     @FXML
     public void N_intro_right(ActionEvent event) throws IOException{
@@ -167,7 +168,6 @@ public class AdventureGameController {
     @FXML
     public void N_forest(ActionEvent event) throws IOException{
         gameManager.loadScene(event,"/com/example/placeholdergame/N_files/N_forest.fxml");
-        System.out.println(gameManager.getDecisionCount());
     }
     @FXML
     public void N_temple(ActionEvent event) throws IOException{
