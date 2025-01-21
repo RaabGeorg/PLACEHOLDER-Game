@@ -8,7 +8,7 @@ import javafx.scene.text.Text;
 
 public class AdventureGameController {
 
-    private EndingCountValues counter = EndingCountValues.getInstance();
+    private EndingCountValues counter = EndingCountValues.getInstance(); //object to count the choices and safe them in EndingCountValues
     private GameManager gameManager = GameManager.getInstance(); //uses a singleton instance of GameManager
     @FXML
     private Label errorMessage; //this label is defined in menu.fxml and is used to display an error message
@@ -171,7 +171,7 @@ public class AdventureGameController {
 
     //Georg's Events start here:
     @FXML
-    public void Introduction_SPACESHIP(ActionEvent event) throws IOException {
+    public void introduction_SPACESHIP(ActionEvent event) throws IOException {
         gameManager.loadScene(event,"/com/example/placeholdergame/georg_files/Introduction_SPACESHIP.fxml");
 
     }
@@ -323,6 +323,7 @@ public class AdventureGameController {
         gameManager.loadScene(event, "/com/example/placeholdergame/endings_files/ending_neutral.fxml");
     }
 
+    //selects ending based on highest count
     public void selectEnding(ActionEvent event) throws IOException {
         System.out.println("good: " + counter.good + " bad: " + counter.bad + " neutral: " + counter.neutral);
         if (counter.good > counter.bad && counter.good > counter.neutral) {
