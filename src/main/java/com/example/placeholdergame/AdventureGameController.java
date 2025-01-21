@@ -79,11 +79,9 @@ public class AdventureGameController {
                 }
             }));
 
-            timeline.setCycleCount(Animation.INDEFINITE); // Run the timeline indefinitely
+            timeline.setCycleCount(5); // Run the timeline 5 times
             timeline.play(); // Start the timeline
         }
-
-
 
     }
 
