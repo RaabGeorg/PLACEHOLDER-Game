@@ -72,76 +72,53 @@ public class AdventureGameController {
 
 
     //Lexi's Events start here:
+    public void lexiIntro(ActionEvent event) throws IOException {
+        gameManager.loadScene(event,"/com/example/placeholdergame/tess_files/1.1_intro_lexi.fxml");
+    }
+
     public void lexiEvent1OptionBack(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("1.1.2_going_back_lexi.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event,"/com/example/placeholdergame/tess_files/1.1.2_going_back_lexi.fxml");
+        counter.neutral++;
     }
 
     public void lexiEvent1OptionLeft(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("1.1.2_going_left_lexi.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event,"/com/example/placeholdergame/tess_files/1.1.2_going_left_lexi.fxml");
+        counter.good++;
     }
 
     public void lexiEvent1OptionRight(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("1.1.2_going_right_lexi.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event,"/com/example/placeholdergame/tess_files/1.1.2_going_right_lexi.fxml");
+        counter.bad++;
     }
 
     public void lexiEvent2OptionRun(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("2.1_run_and_die_lexi.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event,"/com/example/placeholdergame/tess_files/2.1_run_and_die_lexi.fxml");
+        counter.bad++;
     }
 
     public void lexiEvent2OptionHide(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("2.2_hide_lexi.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event,"/com/example/placeholdergame/tess_files/2.2_hide_lexi.fxml");
+        counter.neutral++;
     }
 
     public void lexiEvent2OptionStay(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("2.3_stay_lexi.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event,"/com/example/placeholdergame/tess_files/2.3_stay_lexi.fxml");
+        counter.good++;
     }
 
     public void lexiEvent3OptionWin(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("3.1_level_complete_lexi.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event,"/com/example/placeholdergame/tess_files/3.1_level_complete_lexi.fxml");
+        counter.good++;
     }
 
     public void lexiEvent3OptionAttack(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("3.2_attack_and_die_lexi.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event,"/com/example/placeholdergame/tess_files/3.2_attack_and_die_lexi.fxml");
+        counter.bad++;
     }
 
     public void lexiEvent3OptionBreakFree(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("3.2_break_free_and_die_lexi.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        gameManager.loadScene(event,"/com/example/placeholdergame/tess_files/3.2_break_free_and_die_lexi.fxml");
+        counter.bad++;
     }
 
     //Nicoletta's Events start here:

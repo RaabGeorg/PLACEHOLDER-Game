@@ -17,11 +17,11 @@
       <image>
          <Image url="@image_going_back_lexi.png" />
       </image></ImageView>
-   <Button fx:id="firstButton" maxHeight="-Infinity" maxWidth="322.0" minHeight="-Infinity" minWidth="322.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Go left." textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="145.0">
+   <Button fx:id="firstButton" maxHeight="-Infinity" maxWidth="322.0" minHeight="-Infinity" minWidth="322.0" mnemonicParsing="false" onAction="#lexiEvent1OptionLeft" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Go left." textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="145.0">
       <font>
          <Font size="15.0" />
       </font></Button>
-    <Button fx:id="secondButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Go right." textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="131.0">
+    <Button fx:id="secondButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#lexiEvent1OptionRight" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Go right." textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="131.0">
       <font>
          <Font size="15.0" />
       </font>
@@ -40,5 +40,5 @@
          <Font name="System Bold" size="15.0" />
       </font>
    </Text>
-   <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="610.0" style="-fx-background-color: #808080;" text="All of this is going too fast. You are not ready for this. Where even are you? &#10;You need to get a sense of clarity and orientation first. &#10;But as you turn to find a quiet place to think, another flash of lightning strikes and you flinch. &#10;For a second, right in front of you, you make out a giant tree. And a glint. &#10;You move closer to inspect it and your hand touches cold metal, then a hilt. &#10;(Item obtained: silvered dagger.) &#10;You feel safer now, knowing you have something to defend yourself with; should it come to that. &#10;You steel yourself - you are ready to make a decision now. &#10;&#10;You see the outlines of pine trees against orange light in the distance to your right, and smoke - a castle &#10;to your left, outlined only by the pale light of the full moon, which peeks through a thick blanket of clouds." translateX="-167.0" translateY="-151.0" />
+   <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="610.0" style="-fx-background-color: #808080;" text="All of this is going too fast. You are not ready for this. Where even are you? &#10;You need to get a sense of clarity and orientation first. &#10;But as you turn to find a quiet place to think, another flash of lightning strikes and you flinch. &#10;For a second, right in front of you, you make out a giant tree.&#10;And something carved into it. You move closer to inspect the carvings:&#10;“Fear is a reaction.&#10;Courage is a decision.”&#10;You take a deep breath and steel yourself - you are ready to make a decision now. &#10;&#10;&#10;You see the outlines of pine trees against orange light in the distance to your right, and smoke - a castle &#10;to your left, outlined only by the pale light of the full moon, which peeks through a thick blanket of clouds." translateX="-167.0" translateY="-151.0" />
 </VBox>

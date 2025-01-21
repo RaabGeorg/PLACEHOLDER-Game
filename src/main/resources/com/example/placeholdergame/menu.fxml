@@ -21,7 +21,7 @@
          <Font name="System Bold Italic" size="20.0" />
       </font>
    </Label>
-   <Button fx:id="newGame" maxHeight="-Infinity" maxWidth="322.0" minHeight="-Infinity" minWidth="322.0" mnemonicParsing="false" onAction="#N_intro" opacity="0.8" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="New Game" textAlignment="CENTER" textFill="WHITE" translateY="-300.0">
+   <Button fx:id="newGame" maxHeight="-Infinity" maxWidth="322.0" minHeight="-Infinity" minWidth="322.0" mnemonicParsing="false" onAction="#lexiIntro" opacity="0.8" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="New Game" textAlignment="CENTER" textFill="WHITE" translateY="-300.0">
       <font>
          <Font size="15.0" />
       </font>

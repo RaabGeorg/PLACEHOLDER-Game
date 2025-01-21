@@ -17,16 +17,16 @@
       <image>
          <Image url="@image_corridor_of_death_lexi.png" />
       </image></ImageView>
-   <Button fx:id="firstButton" maxHeight="-Infinity" maxWidth="322.0" minHeight="-Infinity" minWidth="322.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Y O U   D I E D." textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="145.0">
+   <Button fx:id="firstButton" maxHeight="-Infinity" maxWidth="322.0" minHeight="-Infinity" minWidth="322.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="145.0">
       <font>
          <Font size="15.0" />
       </font></Button>
-    <Button fx:id="secondButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Y O U   D I E D." textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="131.0">
+    <Button fx:id="secondButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#N_intro" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Continue." textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="131.0">
       <font>
          <Font size="15.0" />
       </font>
    </Button>
-   <Button fx:id="thirdButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Y O U   D I E D." textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="117.0">
+   <Button fx:id="thirdButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="117.0">
       <font>
          <Font size="15.0" />
       </font>
@@ -40,5 +40,5 @@
          <Font name="System Bold" size="15.0" />
       </font>
    </Text>
-   <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="610.0" style="-fx-background-color: #808080;" text="Without a second thought, you bolt. You’ve seen enough. Red eyes? In a castle? &#10;This is giving you Dracula-vibes, and you do not intend to become someone’s blood-bag. Not tonight. &#10;So you run. As fast as your feet may carry you. You take a turn. And then another. And yet another. &#10;Have you been running in circles? You can’t tell in this god-forsaken darkness! Your heart is racing. &#10;You do not dare look behind you. Not yet. Another turn. And then you see them again. These eyes. &#10;You stop in your tracks. Slip. Stumble. And make a 180. Ready to sprint back down the hall, you freeze. Again. &#10;There they are. Staring right at you. And coming closer. &#10;“Please . . .”, you hear yourself whimper. “I don’t belong here, I am not from your world.”&#10;&#10;“Then your blood should taste all the sweeter . . .”, you hear them reply in a low voice.&#10;&#10;Y O U &#9;D I E D  . . ." translateX="-167.0" translateY="-151.0" />
+   <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="610.0" style="-fx-background-color: #808080;" text="Without a second thought, you bolt. You’ve seen enough. Red eyes? In a castle? &#10;This is giving you Dracula-vibes, and you do not intend to become someone’s blood-bag. Not tonight. &#10;So you run. As fast as your feet may carry you. You take a turn. And then another. And yet another. &#10;Have you been running in circles? You can’t tell in this god-forsaken darkness! Your heart is racing. &#10;You do not dare look behind you. Not yet. Another turn. And then you see them again. These eyes. &#10;You stop in your tracks. Slip. Stumble. And make a 180. Ready to sprint back down the hall, you freeze. Again. &#10;There they are. Staring right at you. And coming closer. &#10;“Please . . .”, you hear yourself whimper. “I don’t belong here, I’m not even sure I’m from your world.”&#10;&#10;“Then your blood should taste all the sweeter . . .”, you hear them reply in a low voice.&#10;&#10;And then a piercing pain, your neck begins to feel stiff.&#10;The world around you starts to spin, and everything becomes dark again…&#10;" translateX="-167.0" translateY="-151.0" />
 </VBox>
