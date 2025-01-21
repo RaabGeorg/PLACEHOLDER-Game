@@ -55,6 +55,7 @@ public class AdventureGameController {
 
     }
 
+
     public void updateHealthCoinCounter() {
         HealthCoinCounter.setText("Health: " + health.getHealth() +" "+ "Coins: " + coin.getCoinCount());
     }
