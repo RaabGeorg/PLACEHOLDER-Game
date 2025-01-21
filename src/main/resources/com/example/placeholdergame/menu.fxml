@@ -7,12 +7,14 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" scaleShape="false" spacing="20.0" style="-fx-background-color: #666666;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.placeholdergame.AdventureGameController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <ImageView fx:id="image" fitHeight="558.0" fitWidth="967.0" pickOnBounds="true" translateY="110.0" VBox.vgrow="NEVER">
+   <Text fx:id="HealthCoinCounter" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" translateY="300.0" />
+   <ImageView fx:id="image" fitHeight="558.0" fitWidth="967.0" pickOnBounds="true" translateY="94.0" VBox.vgrow="NEVER">
       <image>
          <Image url="@Menu.jpg" />
       </image></ImageView>

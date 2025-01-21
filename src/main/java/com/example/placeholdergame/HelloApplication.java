@@ -13,7 +13,7 @@ public class HelloApplication extends Application {
         try {
 
             //change to main screen:
-            Parent root = FXMLLoader.load(getClass().getResource("/com/example/placeholdergame/DavidFXML/DavidIntro.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/com/example/placeholdergame/menu.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
