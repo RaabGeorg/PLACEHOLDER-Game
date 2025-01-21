@@ -40,5 +40,5 @@
          <Font name="System Bold" size="15.0" />
       </font>
    </Text>
-   <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="610.0" style="-fx-background-color: #808080;" text="As you venture deeper into the forest, an unsettling feeling creeps over you. Suddenly, the ground beneath&#10;you gives way, and you fall into a deep pit. The light above grows smaller and smaller until you are left in &#10;darkness. The fall and the shadows sap your energy. Your eyes grow heavier and heavier until you drift &#10;into nothingness.&#10;&#10;GAME OVER!!!" translateX="-167.0" translateY="-151.0" />
+   <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="610.0" style="-fx-background-color: #808080;" text="As you venture deeper into the forest, an unsettling feeling creeps over you. Suddenly, the ground beneath&#10;you gives way, and you fall into a deep pit. The light above grows smaller and smaller until you are left in &#10;darkness. The fall and the shadows sap your energy. Your eyes grow heavier and heavier until you drift &#10;into nothingness.&#10;" translateX="-167.0" translateY="-151.0" />
 </VBox>
