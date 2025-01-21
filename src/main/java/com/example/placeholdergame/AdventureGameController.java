@@ -1,10 +1,16 @@
 package com.example.placeholdergame;
 
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import java.io.IOException;
 import javafx.scene.text.Text;
+import javafx.util.Duration;
+
+
 
 public class AdventureGameController {
 
@@ -40,9 +46,10 @@ public class AdventureGameController {
 
 
 
-
     @FXML
     private Text HealthCoinCounter;
+    @FXML
+    private Text countdownText;
 
     private Coin coin = Coin.getInstance();
     private Health health = Health.getInstance();
@@ -52,9 +59,33 @@ public class AdventureGameController {
         if(HealthCoinCounter != null){
             updateHealthCoinCounter(); // Update the text at initialization
         }
+        if (countdownText != null) {
+            int[] i = {3}; // Array to make `i` effectively final for lambda expression
+
+            countdownText.setText(String.valueOf(i[0])); // Initialize text with the current value of i
+
+            Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(1), e -> {
+                i[0]--; // Decrement the counter
+                if (i[0] >= 0) {
+                    countdownText.setText(String.valueOf(i[0])); // Update the text field
+                }else {
+                    // Create a dummy ActionEvent
+                    ActionEvent dummyEvent = new ActionEvent(countdownText, countdownText.getScene().getWindow());
+                    try {
+                        DeathScreen(dummyEvent); // Pass the dummy event
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                }
+            }));
+
+            timeline.setCycleCount(Animation.INDEFINITE); // Run the timeline indefinitely
+            timeline.play(); // Start the timeline
+        }
+
+
 
     }
-
 
     public void updateHealthCoinCounter() {
         HealthCoinCounter.setText("Health: " + health.getHealth() +" "+ "Coins: " + coin.getCoinCount());
@@ -311,6 +342,10 @@ public class AdventureGameController {
 
     public void davidQTE4(ActionEvent event) throws IOException {
         gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidQTE4.fxml");
+    }
+
+    public void DeathScreen(ActionEvent event) throws IOException {
+        gameManager.loadScene(event, "/com/example/placeholdergame/death.fxml");
     }
 
     public void endingGood(ActionEvent event) throws IOException {
