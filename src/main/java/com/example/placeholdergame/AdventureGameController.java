@@ -14,35 +14,35 @@ import javafx.scene.text.Text;
 public class AdventureGameController {
 
     private EndingCountValues counter = EndingCountValues.getInstance();
-    private GameManager gameManager = GameManager.getInstance();
+    private GameManager gameManager = GameManager.getInstance(); //uses a singleton instance of GameManager
     @FXML
-    private Label errorMessage;
+    private Label errorMessage; //this label is defined in menu.fxml and is used to display an error message
     private Stage stage;
     private Scene scene;
     private Parent root;
 
     @FXML
     public void openMenu(ActionEvent event) throws IOException{
-        gameManager.loadScene(event, "/com/example/placeholdergame/menu.fxml");
+        gameManager.loadScene(event, "/com/example/placeholdergame/menu.fxml"); //loads menu.fxml
     }
 
     @FXML
     public void continueMenu(ActionEvent event) throws IOException{
-        boolean effective = gameManager.returnLastScene(event);
-        if(!effective){
-            showErrorMessage("No Savegame");
+        boolean effective = gameManager.returnLastScene(event); //tries to load the last scene saved in GameManager
+        if(!effective){ //if no scene was saved
+            showErrorMessage("No Savegame"); //show this error message
         }else{
-            hideErrorMessage();
+            hideErrorMessage(); //otherwise, hide the error message
         }
     }
 
     @FXML
-    public void showErrorMessage(String message){
+    public void showErrorMessage(String message){ //sets the text of the error message Label and makes it visible
         errorMessage.setText(message);
         errorMessage.setVisible(true);
     }
     @FXML
-    public void hideErrorMessage(){
+    public void hideErrorMessage(){ //hides the error message Label
         errorMessage.setVisible(false);
     }
 
