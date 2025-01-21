@@ -18,12 +18,16 @@ public class HelloApplication extends Application {
             stage.setScene(scene);
             stage.show();
 
-        } catch(Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
     public static void main(String[] args) {
+        String filepath = "src/main/resources/com/example/placeholdergame/electric_bass_riff.wav";
+        Music music = new Music();
+        music.playMusic(filepath);
+
         launch(args);
     }
 }
