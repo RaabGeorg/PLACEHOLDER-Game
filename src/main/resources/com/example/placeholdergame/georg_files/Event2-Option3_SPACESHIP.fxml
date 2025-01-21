@@ -17,21 +17,21 @@
       <image>
          <Image url="@Event2_SPACESHIP.jpeg" />
       </image></ImageView>
-   <Button fx:id="firstButton" maxHeight="-Infinity" maxWidth="322.0" minHeight="-Infinity" minWidth="322.0" mnemonicParsing="false" onAction="#event3_SPACESHIP" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Option 1" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="145.0">
+   <Button fx:id="firstButton" maxHeight="-Infinity" maxWidth="322.0" minHeight="-Infinity" minWidth="322.0" mnemonicParsing="false" onAction="#event3_SPACESHIP" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="145.0">
       <font>
          <Font size="15.0" />
       </font></Button>
-    <Button fx:id="secondButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#event3_SPACESHIP" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Option 2" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="131.0">
+    <Button fx:id="secondButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#event3_SPACESHIP" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Continue" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="131.0">
       <font>
          <Font size="15.0" />
       </font>
    </Button>
-   <Button fx:id="thirdButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#event3_SPACESHIP" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Option 3" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="117.0">
+   <Button fx:id="thirdButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#event3_SPACESHIP" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="117.0">
       <font>
          <Font size="15.0" />
       </font>
    </Button>
-   <Button accessibleRole="MENU_BUTTON" layoutX="329.0" layoutY="284.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="29.0" prefWidth="63.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-border-color: transparent; -fx-font-style: #808080;" text="Menu" textAlignment="CENTER" textFill="WHITE" translateX="448.0" translateY="-91.0">
+   <Button accessibleRole="MENU_BUTTON" layoutX="329.0" layoutY="284.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#openMenu" prefHeight="29.0" prefWidth="63.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-border-color: transparent; -fx-font-style: #808080;" text="Menu" textAlignment="CENTER" textFill="WHITE" translateX="448.0" translateY="-91.0">
       <font>
          <Font name="System Bold" size="15.0" />
       </font></Button>
