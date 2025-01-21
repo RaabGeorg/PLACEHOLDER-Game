@@ -18,6 +18,14 @@ public class Health {
             }
         }
     }
+    public void addHealth(int amount) {
+        if (amount > 0) { // Ensure only positive values are added
+            health += amount;
+            if (health > 100) { // Ensure health doesn't exceed 100
+                health = 100;
+            }
+        }
+    }
 
     public int getHealth() {
         return health;
