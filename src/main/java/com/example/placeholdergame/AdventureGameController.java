@@ -100,22 +100,33 @@ public class AdventureGameController {
     }
 
     public void lexiEvent1OptionLeft(ActionEvent event) throws IOException {
+
+
         health.addHealth(15); updateHealthCoinCounter();
+
         gameManager.loadScene(event,"/com/example/placeholdergame/tess_files/1.1.2_going_left_lexi.fxml");
         counter.good++;
     }
 
     public void lexiEvent1OptionRight(ActionEvent event) throws IOException {
+
+      
+
         health.loseHealth(15); updateHealthCoinCounter(); if (health.getHealth() <= 0) { health.addHealth(100); DeathScreen(event); } else {
             gameManager.loadScene(event, "/com/example/placeholdergame/tess_files/1.1.2_going_right_lexi.fxml");
         }
+
         counter.bad++;
     }
 
     public void lexiEvent2OptionRun(ActionEvent event) throws IOException {
+
+        
+
         health.loseHealth(15); updateHealthCoinCounter(); if (health.getHealth() <= 0) { health.addHealth(100); DeathScreen(event); } else {
             gameManager.loadScene(event, "/com/example/placeholdergame/tess_files/2.1_run_and_die_lexi.fxml");
         }
+
         counter.bad++;
     }
 
@@ -125,28 +136,42 @@ public class AdventureGameController {
     }
 
     public void lexiEvent2OptionStay(ActionEvent event) throws IOException {
+       
+
         health.addHealth(15); updateHealthCoinCounter();
+
         gameManager.loadScene(event,"/com/example/placeholdergame/tess_files/2.3_stay_lexi.fxml");
         counter.good++;
     }
 
     public void lexiEvent3OptionWin(ActionEvent event) throws IOException {
+        
+
         health.addHealth(15); updateHealthCoinCounter();
+
         gameManager.loadScene(event,"/com/example/placeholdergame/tess_files/3.1_level_complete_lexi.fxml");
         counter.good++;
     }
 
     public void lexiEvent3OptionAttack(ActionEvent event) throws IOException {
+        
+       
+
         health.loseHealth(15); updateHealthCoinCounter(); if (health.getHealth() <= 0) { health.addHealth(100); DeathScreen(event); } else {
             gameManager.loadScene(event, "/com/example/placeholdergame/tess_files/3.2_attack_and_die_lexi.fxml");
         }
+
         counter.bad++;
     }
 
     public void lexiEvent3OptionBreakFree(ActionEvent event) throws IOException {
+        
+        
+
         health.loseHealth(15); updateHealthCoinCounter(); if (health.getHealth() <= 0) { health.addHealth(100); DeathScreen(event); } else {
             gameManager.loadScene(event, "/com/example/placeholdergame/tess_files/3.2_break_free_and_die_lexi.fxml");
         }
+
         counter.bad++;
     }
 
