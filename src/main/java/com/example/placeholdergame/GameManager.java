@@ -32,6 +32,7 @@ public class GameManager {
             stage.setTitle("Feverdream"); //sets the window title
             stage.show(); //displays the window
 
+            System.out.println(fxmlPath);
             if (!fxmlPath.equals("/com/example/placeholdergame/menu.fxml")) { //if the given path is not menu.fxml, store this FXML path in the variable lastFxmlPath
                 this.lastFxmlPath = fxmlPath;
             }

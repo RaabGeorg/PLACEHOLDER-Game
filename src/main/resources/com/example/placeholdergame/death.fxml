@@ -11,7 +11,7 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
    <children>
-      <Button mnemonicParsing="false" onAction="#davidIntro" scaleX="3.0" scaleY="3.0" style="-fx-background-color: #808080;" text="TRY AGAIN" textFill="WHITE" translateY="210.0">
+      <Button mnemonicParsing="false" onAction="#openMenu" scaleX="3.0" scaleY="3.0" style="-fx-background-color: #808080;" text="TRY AGAIN" textFill="WHITE" translateY="210.0">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Button>
