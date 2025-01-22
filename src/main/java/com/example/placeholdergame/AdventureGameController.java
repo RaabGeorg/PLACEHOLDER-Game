@@ -329,7 +329,7 @@ public class AdventureGameController {
     //David Story starts here
 
     public void davidIntro(ActionEvent event) throws IOException {
-        coin.addCoins(500); updateHealthCoinCounter(); // Increment coin count-Update the display
+        coin.addCoins(1000); updateHealthCoinCounter(); // Increment coin count-Update the display
         gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidIntro.fxml");
     }
 
@@ -371,7 +371,7 @@ public class AdventureGameController {
     }
 
     public void hitStrength(ActionEvent event) throws IOException {
-        health.loseHealth(25); opponenthealth.loseOpponentHealth(50); updateHealthCoinCounter(); updateOpponentHealth();
+        health.loseHealth(25); opponenthealth.loseOpponentHealth(50);
         if (health.getHealth() <= 0) { health.addHealth(100); DeathScreen(event); } else {
             if (opponenthealth.getOpponent() <= 0) {
                 gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidChoice3-3.fxml");
@@ -381,7 +381,7 @@ public class AdventureGameController {
         }
     }
     public void hitNormal(ActionEvent event) throws IOException {
-        health.loseHealth(25); opponenthealth.loseOpponentHealth(35); updateHealthCoinCounter(); updateOpponentHealth();
+        health.loseHealth(25); opponenthealth.loseOpponentHealth(35);
         if (health.getHealth() <= 0) { health.addHealth(100); DeathScreen(event); } else {
             if (opponenthealth.getOpponent() <= 0) {
                 gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidChoice3-3.fxml");

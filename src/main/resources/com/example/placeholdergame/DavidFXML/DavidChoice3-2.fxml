@@ -32,15 +32,15 @@
          <Font name="System Bold" size="12.0" />
       </font>
    </Text>
-   <Button mnemonicParsing="false" onAction="#addHealth50" scaleX="3.0" scaleY="2.0" translateX="57.0" translateY="-156.0" />
-   <Button mnemonicParsing="false" onAction="#addHealth100" scaleX="3.0" scaleY="2.0" translateX="76.0" translateY="-94.0" />
-   <Button mnemonicParsing="false" onAction="#addStrength" scaleX="4.0" scaleY="5.0" translateX="166.0" translateY="-182.0" />
+   <Button mnemonicParsing="false" onAction="#addHealth50" opacity="0.0" scaleX="3.0" scaleY="2.0" translateX="57.0" translateY="-156.0" />
+   <Button mnemonicParsing="false" onAction="#addHealth100" opacity="0.0" scaleX="3.0" scaleY="2.0" translateX="76.0" translateY="-94.0" />
+   <Button mnemonicParsing="false" onAction="#addStrength" opacity="0.0" scaleX="4.0" scaleY="5.0" translateX="166.0" translateY="-182.0" />
    <Button fx:id="thirdButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#davidChoice3x3" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Continue" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="64.0">
       <font>
          <Font size="15.0" />
       </font>
    </Button>
-   <Button accessibleRole="MENU_BUTTON" onAction="#openMenu" layoutX="329.0" layoutY="292.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="29.0" prefWidth="63.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-border-color: transparent; -fx-font-style: #808080;" text="Menu" textAlignment="CENTER" textFill="WHITE" translateX="448.0" translateY="-139.0">
+   <Button accessibleRole="MENU_BUTTON" layoutX="329.0" layoutY="292.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#openMenu" prefHeight="29.0" prefWidth="63.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-border-color: transparent; -fx-font-style: #808080;" text="Menu" textAlignment="CENTER" textFill="WHITE" translateX="448.0" translateY="-139.0">
       <font>
          <Font name="System Bold" size="15.0" />
       </font></Button>
