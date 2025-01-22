@@ -37,4 +37,5 @@
       </font>
    </Text>
    <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="610.0" style="-fx-background-color: #808080;" text="Relaxing sigh of relief! You managed to avoid the Deathcounter!&#10;I really shouldn’t have done that!&#10;&#10;Choice 1: There is a PC I could look for a repairman to help me out.&#10;Choice 2: Go outside and ask some strangers for help.&#10;" translateX="-167.0" translateY="-119.0" />
+
 </VBox>
