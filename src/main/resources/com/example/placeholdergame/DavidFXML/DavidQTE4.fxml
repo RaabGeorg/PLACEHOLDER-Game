@@ -27,7 +27,7 @@
          <Font size="15.0" />
       </font>
    </Button>
-   <Button accessibleRole="MENU_BUTTON" onAction="#openMenu" layoutX="329.0" layoutY="292.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="29.0" prefWidth="63.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-border-color: transparent; -fx-font-style: #808080;" text="Menu" textAlignment="CENTER" textFill="WHITE" translateX="448.0" translateY="-54.0">
+   <Button accessibleRole="MENU_BUTTON" layoutX="329.0" layoutY="292.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#openMenu" prefHeight="29.0" prefWidth="63.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-border-color: transparent; -fx-font-style: #808080;" text="Menu" textAlignment="CENTER" textFill="WHITE" translateX="448.0" translateY="-54.0">
       <font>
          <Font name="System Bold" size="15.0" />
       </font></Button>
@@ -36,5 +36,5 @@
          <Font name="System Bold" size="15.0" />
       </font>
    </Text>
-   <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="610.0" style="-fx-background-color: #808080;" text="Relaxing sigh of relief I really shouldn’t have done that!&#10;&#10;Choice 1: There is a PC I could look for a repairman to help me out.&#10;Choice 2: Go outside and ask some strangers for help.&#10;" translateX="-167.0" translateY="-119.0" />
+   <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="610.0" style="-fx-background-color: #808080;" text="Relaxing sigh of relief! You managed to avoid the the Deathcounter but lost all your coins! &#10;I really shouldn’t have done that!&#10;&#10;Choice 1: There is a PC I could look for a repairman to help me out.&#10;Choice 2: Go outside and ask some strangers for help.&#10;" translateX="-167.0" translateY="-119.0" />
 </VBox>

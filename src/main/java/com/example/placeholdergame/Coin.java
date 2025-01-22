@@ -27,6 +27,7 @@ public class Coin {
     public int getCoinCount() {
         return coinCount;
     }
+
     public void setCoinCount(int amount) {
         if (amount >= 0) { // Ensure the coin count is not negative
             coinCount = amount;
