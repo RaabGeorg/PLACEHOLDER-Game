@@ -332,12 +332,11 @@ public class AdventureGameController {
     //David Story starts here
     @FXML
     public void davidIntro(ActionEvent event) throws IOException {
-        coin.addCoins(1000); updateHealthCoinCounter(); // Increment coin count-Update the display
+        coin.addCoins(500); updateHealthCoinCounter(); // Increment coin count-Update the display
         gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidIntro.fxml");
     }
     @FXML
     public void davidChoice1(ActionEvent event) throws IOException {
-        health.addHealth(15); updateHealthCoinCounter();
         gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidChoice1.fxml");
         counter.good++;
     }
@@ -347,7 +346,7 @@ public class AdventureGameController {
     }
     @FXML
     public void davidChoice3x1(ActionEvent event) throws IOException {
-        health.loseHealth(5); updateHealthCoinCounter(); if (health.getHealth() <= 0) { health.addHealth(100); DeathScreen(event); } else {
+        health.loseHealth(15); updateHealthCoinCounter(); if (health.getHealth() <= 0) { health.addHealth(100); DeathScreen(event); } else {
             gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidChoice3-1.fxml");
         }
         counter.bad++;

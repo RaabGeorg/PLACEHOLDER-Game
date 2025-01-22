@@ -16,6 +16,7 @@ public class HelloApplication extends Application {
             Parent root = FXMLLoader.load(getClass().getResource("/com/example/placeholdergame/menu.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
+            stage.setTitle("Feverdream");
             stage.show();
 
         } catch (Exception e) {
