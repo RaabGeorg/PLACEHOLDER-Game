@@ -27,7 +27,7 @@
          <Font size="15.0" />
       </font>
    </Button>
-   <Button accessibleRole="MENU_BUTTON" layoutX="329.0" layoutY="292.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="29.0" prefWidth="63.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-border-color: transparent; -fx-font-style: #808080;" text="Menu" textAlignment="CENTER" textFill="WHITE" translateX="448.0" translateY="-54.0">
+   <Button accessibleRole="MENU_BUTTON" onAction="#openMenu" layoutX="329.0" layoutY="292.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="29.0" prefWidth="63.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-border-color: transparent; -fx-font-style: #808080;" text="Menu" textAlignment="CENTER" textFill="WHITE" translateX="448.0" translateY="-54.0">
       <font>
          <Font name="System Bold" size="15.0" />
       </font></Button>
