@@ -115,7 +115,7 @@ public class AdventureGameController {
     }
     @FXML
     public void lexiEvent1OptionRight(ActionEvent event) throws IOException {
-        health.loseHealth(15); updateHealthCoinCounter(); if (health.getHealth() <= 0) { health.addHealth(100); DeathScreen(event); } else {
+        health.loseHealth(20); updateHealthCoinCounter(); if (health.getHealth() <= 0) { health.addHealth(100); DeathScreen(event); } else {
             gameManager.loadScene(event, "/com/example/placeholdergame/tess_files/1.1.2_going_right_lexi.fxml");
         }
         counter.bad++;
@@ -129,6 +129,7 @@ public class AdventureGameController {
     }
     @FXML
     public void lexiEvent2OptionHide(ActionEvent event) throws IOException {
+        coin.addCoins(250); updateHealthCoinCounter();
         gameManager.loadScene(event,"/com/example/placeholdergame/tess_files/2.2_hide_lexi.fxml");
         counter.neutral++;
     }
