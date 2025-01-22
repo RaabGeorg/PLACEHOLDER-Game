@@ -428,8 +428,8 @@ public class AdventureGameController {
     //David story ends here:
     @FXML
     public void DeathScreen(ActionEvent event) throws IOException {
-        health.addHealth(100); coin.setCoinCount(0); updateHealthCoinCounter();
         gameManager.loadScene(event, "/com/example/placeholdergame/death.fxml");
+        health.addHealth(100); coin.setCoinCount(0); updateHealthCoinCounter();
     }
     @FXML
     public void endingGood(ActionEvent event) throws IOException {
