@@ -22,12 +22,12 @@
          <Font size="15.0" />
       </font>
    </Button>
-   <Button fx:id="thirdButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Play RockPaperScissors" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="149.0">
+   <Button fx:id="thirdButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#davidRPS" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Play RockPaperScissors" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="149.0">
       <font>
          <Font size="15.0" />
       </font>
    </Button>
-   <Button accessibleRole="MENU_BUTTON" layoutX="329.0" layoutY="292.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="29.0" prefWidth="63.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-border-color: transparent; -fx-font-style: #808080;" text="Menu" textAlignment="CENTER" textFill="WHITE" translateX="448.0" translateY="-54.0">
+   <Button accessibleRole="MENU_BUTTON" onAction="#openMenu" layoutX="329.0" layoutY="292.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="29.0" prefWidth="63.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-border-color: transparent; -fx-font-style: #808080;" text="Menu" textAlignment="CENTER" textFill="WHITE" translateX="448.0" translateY="-54.0">
       <font>
          <Font name="System Bold" size="15.0" />
       </font></Button>

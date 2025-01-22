@@ -369,6 +369,7 @@ public class AdventureGameController {
     public void davidChoice3x3(ActionEvent event) throws IOException {
         gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidChoice3-3-2.fxml");
     }
+
     public void hitStrength(ActionEvent event) throws IOException {
         health.loseHealth(25); opponenthealth.loseOpponentHealth(50); updateHealthCoinCounter(); updateOpponentHealth();
         if (health.getHealth() <= 0) { health.addHealth(100); DeathScreen(event); } else {
@@ -389,12 +390,6 @@ public class AdventureGameController {
             }
         }
     }
-    public void davidChoice3final(ActionEvent event) throws IOException {
-        gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidChoice3-3-3.fxml");
-    }
-
-
-
 
     public void davidChoice4(ActionEvent event) throws IOException {
         if (coin.getCoinCount() <= 299) {
@@ -402,6 +397,10 @@ public class AdventureGameController {
         } else {
             gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidChoice4.fxml");
         }
+    }
+
+    public void davidRPS(ActionEvent event) throws IOException {
+        gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidFinal.fxml");
     }
 
     public void davidQTE1(ActionEvent event) throws IOException {
@@ -420,6 +419,7 @@ public class AdventureGameController {
         gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidQTE4.fxml");
     }
 
+    //David story ends here:
     public void DeathScreen(ActionEvent event) throws IOException {
         health.addHealth(100); coin.setCoinCount(0); updateHealthCoinCounter();
         gameManager.loadScene(event, "/com/example/placeholdergame/death.fxml");
