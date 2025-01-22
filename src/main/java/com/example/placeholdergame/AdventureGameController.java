@@ -49,12 +49,18 @@ public class AdventureGameController {
     private Text HealthCoinCounter;
     @FXML
     private Text countdownText;
+    @FXML
+    private Text OpponentText;
 
     private Coin coin = Coin.getInstance();
     private Health health = Health.getInstance();
+    private Opponent opponenthealth = Opponent.getInstance();
 
     @FXML
     public void initialize(){
+        if(OpponentText != null){
+            updateOpponentHealth(); // Update the text at initialization
+        }
         if(HealthCoinCounter != null){
             updateHealthCoinCounter(); // Update the text at initialization
         }
@@ -84,7 +90,9 @@ public class AdventureGameController {
     public void updateHealthCoinCounter() {
         HealthCoinCounter.setText("Health: " + health.getHealth() +" "+ "Coins: " + coin.getCoinCount());
     }
-
+    public void updateOpponentHealth() {
+        OpponentText.setText("Health: " + opponenthealth.getOpponent());
+    }
 
 
 
@@ -100,33 +108,22 @@ public class AdventureGameController {
     }
 
     public void lexiEvent1OptionLeft(ActionEvent event) throws IOException {
-
-
         health.addHealth(15); updateHealthCoinCounter();
-
         gameManager.loadScene(event,"/com/example/placeholdergame/tess_files/1.1.2_going_left_lexi.fxml");
         counter.good++;
     }
 
     public void lexiEvent1OptionRight(ActionEvent event) throws IOException {
-
-      
-
         health.loseHealth(15); updateHealthCoinCounter(); if (health.getHealth() <= 0) { health.addHealth(100); DeathScreen(event); } else {
             gameManager.loadScene(event, "/com/example/placeholdergame/tess_files/1.1.2_going_right_lexi.fxml");
         }
-
         counter.bad++;
     }
 
     public void lexiEvent2OptionRun(ActionEvent event) throws IOException {
-
-        
-
         health.loseHealth(15); updateHealthCoinCounter(); if (health.getHealth() <= 0) { health.addHealth(100); DeathScreen(event); } else {
             gameManager.loadScene(event, "/com/example/placeholdergame/tess_files/2.1_run_and_die_lexi.fxml");
         }
-
         counter.bad++;
     }
 
@@ -136,42 +133,28 @@ public class AdventureGameController {
     }
 
     public void lexiEvent2OptionStay(ActionEvent event) throws IOException {
-       
-
         health.addHealth(15); updateHealthCoinCounter();
-
         gameManager.loadScene(event,"/com/example/placeholdergame/tess_files/2.3_stay_lexi.fxml");
         counter.good++;
     }
 
     public void lexiEvent3OptionWin(ActionEvent event) throws IOException {
-        
-
         health.addHealth(15); updateHealthCoinCounter();
-
         gameManager.loadScene(event,"/com/example/placeholdergame/tess_files/3.1_level_complete_lexi.fxml");
         counter.good++;
     }
 
     public void lexiEvent3OptionAttack(ActionEvent event) throws IOException {
-        
-       
-
         health.loseHealth(15); updateHealthCoinCounter(); if (health.getHealth() <= 0) { health.addHealth(100); DeathScreen(event); } else {
             gameManager.loadScene(event, "/com/example/placeholdergame/tess_files/3.2_attack_and_die_lexi.fxml");
         }
-
         counter.bad++;
     }
 
     public void lexiEvent3OptionBreakFree(ActionEvent event) throws IOException {
-        
-        
-
         health.loseHealth(15); updateHealthCoinCounter(); if (health.getHealth() <= 0) { health.addHealth(100); DeathScreen(event); } else {
             gameManager.loadScene(event, "/com/example/placeholdergame/tess_files/3.2_break_free_and_die_lexi.fxml");
         }
-
         counter.bad++;
     }
 
@@ -370,13 +353,55 @@ public class AdventureGameController {
     public void davidChoice3x2(ActionEvent event) throws IOException {
         gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidChoice3-2.fxml");
     }
-
-    public void davidChoice3x3(ActionEvent event) throws IOException {
-        gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidChoice3-3.fxml");
+    public void addStrength(ActionEvent event) throws IOException {
+        coin.loseCoins(1500); updateHealthCoinCounter();
+        gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidChoice3-3-1.fxml");
+    }
+    public void addHealth50(ActionEvent event) throws IOException {
+        coin.loseCoins(1000); health.addHealth(50); updateHealthCoinCounter();
+        gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidChoice3-3-2.fxml");
+    }
+    public void addHealth100(ActionEvent event) throws IOException {
+        coin.loseCoins(1500); health.addHealth(100); updateHealthCoinCounter();
+        gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidChoice3-3-2.fxml");
     }
 
+    public void davidChoice3x3(ActionEvent event) throws IOException {
+        gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidChoice3-3-2.fxml");
+    }
+    public void hitStrength(ActionEvent event) throws IOException {
+        health.loseHealth(25); opponenthealth.loseOpponentHealth(50); updateHealthCoinCounter(); updateOpponentHealth();
+        if (health.getHealth() <= 0) { health.addHealth(100); DeathScreen(event); } else {
+            if (opponenthealth.getOpponent() <= 0) {
+                gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidChoice3-3.fxml");
+            } else {
+                updateHealthCoinCounter(); updateOpponentHealth();
+            }
+        }
+    }
+    public void hitNormal(ActionEvent event) throws IOException {
+        health.loseHealth(25); opponenthealth.loseOpponentHealth(35); updateHealthCoinCounter(); updateOpponentHealth();
+        if (health.getHealth() <= 0) { health.addHealth(100); DeathScreen(event); } else {
+            if (opponenthealth.getOpponent() <= 0) {
+                gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidChoice3-3.fxml");
+            } else {
+                updateHealthCoinCounter(); updateOpponentHealth();
+            }
+        }
+    }
+    public void davidChoice3final(ActionEvent event) throws IOException {
+        gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidChoice3-3-3.fxml");
+    }
+
+
+
+
     public void davidChoice4(ActionEvent event) throws IOException {
-        gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidChoice4.fxml");
+        if (coin.getCoinCount() <= 299) {
+            gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidChoice4-1.fxml");
+        } else {
+            gameManager.loadScene(event, "/com/example/placeholdergame/DavidFXML/DavidChoice4.fxml");
+        }
     }
 
     public void davidQTE1(ActionEvent event) throws IOException {

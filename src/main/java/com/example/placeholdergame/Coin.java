@@ -15,6 +15,14 @@ public class Coin {
             coinCount += amount;
         }
     }
+    public void loseCoins(int amount) {
+        if (amount > 0) { // Ensure only positive values are subtracted
+            coinCount -= amount;
+            if (coinCount < 0) { // Prevent coin count from going negative
+                coinCount = 0;
+            }
+        }
+    }
 
     public int getCoinCount() {
         return coinCount;
