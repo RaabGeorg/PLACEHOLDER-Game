@@ -13,23 +13,41 @@
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <ImageView fx:id="image" fitHeight="350.0" fitWidth="961.0" pickOnBounds="true" translateY="66.0" VBox.vgrow="NEVER">
+   <ImageView fx:id="image" fitHeight="350.0" fitWidth="961.0" pickOnBounds="true" translateY="191.0" VBox.vgrow="NEVER">
       <image>
          <Image url="@DavidPicture/DavidChoice3-2.png" />
       </image></ImageView>
-   <Button fx:id="thirdButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#davidChoice3x3" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Continue" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="185.0">
+   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Streangth" translateX="168.0" translateY="114.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Text>
+   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Health +100" translateX="73.0" translateY="64.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Text>
+   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Health +50" translateX="60.0" translateY="-73.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Text>
+   <Button mnemonicParsing="false" onAction="#addHealth50" scaleX="3.0" scaleY="2.0" translateX="57.0" translateY="-156.0" />
+   <Button mnemonicParsing="false" onAction="#addHealth100" scaleX="3.0" scaleY="2.0" translateX="76.0" translateY="-94.0" />
+   <Button mnemonicParsing="false" onAction="#addStrength" scaleX="4.0" scaleY="5.0" translateX="166.0" translateY="-182.0" />
+   <Button fx:id="thirdButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#davidChoice3x3" prefHeight="49.0" prefWidth="322.0" style="-fx-background-color: #808080; -fx-font-weight: bold;" text="Continue" textAlignment="CENTER" textFill="WHITE" translateX="308.0" translateY="64.0">
       <font>
          <Font size="15.0" />
       </font>
    </Button>
-   <Button accessibleRole="MENU_BUTTON" layoutX="329.0" layoutY="292.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="29.0" prefWidth="63.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-border-color: transparent; -fx-font-style: #808080;" text="Menu" textAlignment="CENTER" textFill="WHITE" translateX="448.0" translateY="-23.0">
+   <Button accessibleRole="MENU_BUTTON" layoutX="329.0" layoutY="292.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="29.0" prefWidth="63.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-border-color: transparent; -fx-font-style: #808080;" text="Menu" textAlignment="CENTER" textFill="WHITE" translateX="448.0" translateY="-139.0">
       <font>
          <Font name="System Bold" size="15.0" />
       </font></Button>
-   <Text fx:id="HealthCoinCounter" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" translateX="-380.0" translateY="-69.0" wrappingWidth="182.46205520629883">
+   <Text fx:id="HealthCoinCounter" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" translateX="-380.0" translateY="-187.0" wrappingWidth="182.46205520629883">
       <font>
          <Font name="System Bold" size="15.0" />
       </font>
    </Text>
-   <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="610.0" style="-fx-background-color: #808080;" text="All of a sudden a small Robot Ball is hovering in front of you and starts to make strange noises. The robot &#10;tries to tell you something but you can't understand. Suddenly the Robot opens up its inventory and shows &#10;you multiple items to choose from:" translateX="-167.0" translateY="-82.0" />
+   <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="610.0" style="-fx-background-color: #808080;" text="All of a sudden a small Robot Ball is hovering in front of you and starts to make strange noises. The robot &#10;tries to tell you something but you can't understand. Suddenly the Robot opens up its inventory and shows &#10;you multiple items to choose from:&#10;&#10;YOU CAN ONLY CHOOSE ONE ITEM!&#10;Add Health: +50     = 1000 Coins&#10;Add Health: +100   = 1500 Coins&#10;Add Strength          = 1500 Coins" translateX="-167.0" translateY="-203.0" />
 </VBox>
